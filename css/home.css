@@ -24,6 +24,7 @@ a {
 }
 
 .header .container {
+  padding: 1.5rem 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -43,17 +44,116 @@ a {
 }
 
 .header .container .logo-header .logo i {
-  line-height: 30px;
+  line-height: 52px;
 }
 
 .header .container .logo-header .logo p {
-  margin-left: 10px;
-  line-height: 30px;
+  margin-left: 0.3rem;
+  line-height: 52px;
 }
 
 .header .container .wrap-navbar {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header .container .wrap-navbar .navbar .nav-item {
+  position: relative;
+  margin-left: 1.75rem;
+  font-size: 1rem;
+  font-weight: 400;
+  color: #2c3038;
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s;
+  line-height: 52px;
+}
+
+.header .container .wrap-navbar .navbar .nav-item::before {
+  position: absolute;
+  content: "";
+  height: 2px;
+  background-color: #dc4f72;
+  width: 0;
+  bottom: 0.875rem;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+.header .container .wrap-navbar .navbar .nav-item:hover {
+  color: #dc4f72;
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s;
+}
+
+.header .container .wrap-navbar .navbar .nav-item:active {
+  color: #dc4f72;
+}
+
+.header .container .wrap-navbar .navbar .nav-item:hover::before {
+  width: 35%;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+.header .container .wrap-navbar .navbar .dropdown-btn {
+  position: relative;
+  line-height: 52px;
+  margin-left: 1.75rem;
+  font-size: 1rem;
+  font-weight: 400;
+  color: #2c3038;
+}
+
+.header .container .wrap-navbar .navbar .dropdown-btn:hover {
+  color: #dc4f72;
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s;
+}
+
+.header .container .wrap-navbar .navbar .dropdown-btn::before {
+  position: absolute;
+  content: "";
+  height: 2px;
+  background-color: #dc4f72;
+  width: 0;
+  bottom: 0.875rem;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+.header .container .wrap-navbar .navbar .dropdown-btn:hover::before {
+  width: 35%;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+.header .container .wrap-navbar .btn-schedule {
+  padding: 0 1.25rem;
+  border: 1px solid #dc4f72;
+  border-radius: 0.3rem;
+  margin-left: 2rem;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+.header .container .wrap-navbar .btn-schedule:hover {
+  background-color: #dc4f72;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+.header .container .wrap-navbar .btn-schedule:hover .btn {
+  color: #fff;
+}
+
+.header .container .wrap-navbar .btn-schedule .btn {
+  line-height: 40px;
+  font-size: 1rem;
+  font-weight: 700;
+  color: #dc4f72;
 }
 /*# sourceMappingURL=home.css.map */

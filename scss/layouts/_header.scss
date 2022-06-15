@@ -8,6 +8,7 @@ a {
 
 .header {
   .container {
+    padding: 1.5rem 0;
     display: flex;
     justify-content: space-between;
     .logo-header {
@@ -17,16 +18,87 @@ a {
         display: flex;
         @include Text($text-lg, $text-extraBold, $primary);
         i {
-          line-height: 30px;
+          line-height: 52px;
         }
         p {
-          margin-left: 10px;
-          line-height: 30px;
+          margin-left: 0.3rem;
+          line-height: 52px;
         }
       }
     }
     .wrap-navbar {
       display: flex;
+      align-items: center;
+      .navbar {
+        .nav-item {
+          position: relative;
+          margin-left: 1.75rem;
+          @include Text($text-base, $text-regular, $c1-200);
+          transition: all 0.4s;
+          line-height: 52px;
+          &::before {
+            position: absolute;
+            content: "";
+            height: 2px;
+            background-color: $primary;
+            width: 0;
+            bottom: 0.875rem;
+            transition: all 0.5s;
+          }
+          &:hover {
+            color: $primary;
+            transition: all 0.4s;
+          }
+          &:active {
+            color: $primary;
+          }
+          &:hover::before {
+            width: 35%;
+            transition: all 0.5s;
+          }
+        }
+        .dropdown-btn {
+          position: relative;
+          line-height: 52px;
+          &:hover {
+            color: $primary;
+            transition: all 0.4s;
+          }
+          &::before {
+            position: absolute;
+            content: "";
+            height: 2px;
+            background-color: $primary;
+            width: 0;
+            bottom: 0.875rem;
+            transition: all 0.5s;
+          }
+          &:hover::before {
+            width: 35%;
+            transition: all 0.5s;
+          }
+          margin-left: 1.75rem;
+          @include Text($text-base, $text-regular, $c1-200);
+        }
+      }
+      .btn-schedule {
+        padding: 0 1.25rem;
+        border: 1px solid $primary;
+        border-radius: 0.3rem;
+        margin-left: 2rem;
+        transition: all 0.5s;
+        &:hover {
+          background-color: $primary;
+          .btn {
+            color: $white;
+          }
+          transition: all 0.5s;
+        }
+        .btn {
+          line-height: 40px;
+          @include Text($text-base, $text-bold, $primary);
+        }
+      }
     }
   }
 }
