@@ -1,0 +1,25 @@
+@import "../theme/mixin";
+@import "../theme/variables";
+
+a {
+  text-decoration: none;
+  display: block;
+}
+
+.header {
+  .container {
+    display: flex;
+    justify-content: space-between;
+    .logo {
+      border: 1px solid black;
+      a {
+        display: flex;
+        align-items: center;
+        @include Text($text-lg, $text-bold, $primary);
+        i {
+          display: block;
+        }
+      }
+    }
+  }
+}

@@ -1,1 +1,54 @@
-/* No CSS *//*# sourceMappingURL=home.css.map */
+html {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: "Nunito", sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+  color: #212529;
+  background-color: #fff;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 1280px;
+}
+
+a {
+  text-decoration: none;
+  display: block;
+}
+
+.header .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.header .container .logo {
+  border: 1px solid black;
+}
+
+.header .container .logo a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #dc4f72;
+}
+
+.header .container .logo a i {
+  display: block;
+}
+/*# sourceMappingURL=home.css.map */
