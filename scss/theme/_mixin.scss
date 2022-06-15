@@ -1,0 +1,16 @@
+@mixin Text($fs: $text-base, $fw: $text-regular, $c: $c1-700) {
+  font-size: $fs;
+  font-weight: $fw;
+  color: $c;
+}
+
+@mixin Button($bg, $border, $radius, $padding, $shadow) {
+  background: $bg;
+  border: $border;
+  border-radius: $radius;
+  padding: $padding;
+  box-shadow: $shadow;
+  display: block;
+  transition: all 0.4s;
+  cursor: pointer;
+}
