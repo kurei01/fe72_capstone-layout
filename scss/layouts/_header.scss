@@ -29,7 +29,9 @@ a {
     .wrap-navbar {
       display: flex;
       align-items: center;
+      // position: relative;
       .navbar {
+        display: flex;
         .nav-item {
           position: relative;
           margin-left: 1.75rem;
@@ -49,36 +51,109 @@ a {
             color: $primary;
             transition: all 0.4s;
           }
-          &:active {
-            color: $primary;
-          }
+          // &:active {
+          //   color: $primary;
+          // }
           &:hover::before {
             width: 35%;
             transition: all 0.5s;
           }
         }
-        .dropdown-btn {
+
+        .drop_down-menu {
           position: relative;
-          line-height: 52px;
-          &:hover {
-            color: $primary;
-            transition: all 0.4s;
+          .drop_down-btn {
+            position: relative;
+            margin-left: 1.75rem;
+            line-height: 52px;
+            z-index: 5;
+
+            @include Text($text-base, $text-regular, $c1-200);
+            &::before {
+              position: absolute;
+              content: "";
+              height: 2px;
+              background-color: $primary;
+              width: 0;
+              bottom: 0.875rem;
+              transition: all 0.5s;
+            }
+            &:hover {
+              color: $primary;
+              transition: all 0.4s;
+            }
+            // &:active {
+            //   color: $primary;
+            // }
+            &:hover::before {
+              width: 35%;
+              transition: all 0.5s;
+            }
+
+            &:focus ~ .menu_item {
+              display: block;
+            }
+
+            &:default ~ .menu_item {
+              display: block;
+            }
+            i {
+              font-size: $text-xs;
+            }
           }
-          &::before {
+          .menu_item {
+            display: none;
+            padding: 1.3rem 1.5rem;
+            border: 1px solid $c1-100;
             position: absolute;
-            content: "";
-            height: 2px;
-            background-color: $primary;
-            width: 0;
-            bottom: 0.875rem;
-            transition: all 0.5s;
+            left: -30px;
+            top: 100%;
+            border-radius: 6px;
+            min-width: 11rem;
+            padding: 1rem 0 1rem 0.3rem;
+            box-shadow: 1px 5px 7.5px rgba(196, 196, 196, 0.2);
+            &::before {
+              content: "";
+              width: 14px;
+              height: 14px;
+              background: #fff;
+              border: 1px solid rgba(0, 0, 0, 0.15);
+              display: block;
+              border-right: none;
+              border-bottom: none;
+              transform: translateX(-50%) rotateZ(45deg);
+              position: absolute;
+              top: -7px;
+              left: 49%;
+            }
+            .item {
+              display: block;
+              position: relative;
+              @include Text($text-base, $text-regular, $c1-200);
+              line-height: 30px;
+              margin-left: 1rem;
+              &::before {
+                position: absolute;
+                content: "";
+                height: 2px;
+                background-color: $primary;
+                width: 0;
+                bottom: 0;
+                transition: all 0.5s;
+              }
+              &:hover {
+                color: $primary;
+                transition: all 0.4s;
+              }
+              // &:active {
+              //   color: $primary;
+              // }
+              &:hover::before {
+                width: 20%;
+                transition: all 0.5s;
+              }
+            }
           }
-          &:hover::before {
-            width: 35%;
-            transition: all 0.5s;
-          }
-          margin-left: 1.75rem;
-          @include Text($text-base, $text-regular, $c1-200);
         }
       }
       .btn-schedule {
