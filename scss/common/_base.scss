@@ -12,3 +12,8 @@ body {
   @include Text($text-base, $text-regular, $c1-300);
   background-color: $white;
 }
+
+.container {
+  margin: 0 auto;
+  max-width: 1280px;
+}
