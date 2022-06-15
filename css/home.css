@@ -32,23 +32,28 @@ a {
           justify-content: space-between;
 }
 
-.header .container .logo {
-  border: 1px solid black;
-}
-
-.header .container .logo a {
+.header .container .logo-header .logo {
+  height: 30px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   font-size: 1.5rem;
-  font-weight: 700;
+  font-weight: 800;
   color: #dc4f72;
 }
 
-.header .container .logo a i {
-  display: block;
+.header .container .logo-header .logo i {
+  line-height: 30px;
+}
+
+.header .container .logo-header .logo p {
+  margin-left: 10px;
+  line-height: 30px;
+}
+
+.header .container .wrap-navbar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 /*# sourceMappingURL=home.css.map */

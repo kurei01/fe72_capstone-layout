@@ -10,16 +10,23 @@ a {
   .container {
     display: flex;
     justify-content: space-between;
-    .logo {
-      border: 1px solid black;
-      a {
+    .logo-header {
+      // border: 1px solid black;
+      .logo {
+        height: 30px;
         display: flex;
-        align-items: center;
-        @include Text($text-lg, $text-bold, $primary);
+        @include Text($text-lg, $text-extraBold, $primary);
         i {
-          display: block;
+          line-height: 30px;
+        }
+        p {
+          margin-left: 10px;
+          line-height: 30px;
         }
       }
+    }
+    .wrap-navbar {
+      display: flex;
     }
   }
 }
