@@ -1,0 +1,14 @@
+@import "../theme/mixin";
+@import "../theme/variables";
+
+html {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Nunito", sans-serif;
+  @include Text($text-base, $text-regular, $c1-300);
+  background-color: $white;
+}

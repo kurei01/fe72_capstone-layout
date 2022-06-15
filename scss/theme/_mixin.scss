@@ -1,4 +1,4 @@
-@mixin Text($fs: $text-base, $fw: $text-regular, $c: $c1-700) {
+@mixin Text($fs: $text-base, $fw: $text-regular, $c: $c1-300) {
   font-size: $fs;
   font-weight: $fw;
   color: $c;
