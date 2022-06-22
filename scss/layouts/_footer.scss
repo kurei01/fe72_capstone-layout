@@ -1,0 +1,68 @@
+@import "../theme/mixin";
+@import "../theme/variables";
+
+.footer {
+  .footer-top {
+    .container {
+      margin: 3rem auto;
+      .footer-top-section {
+        max-width: 750px;
+        margin: 0 auto;
+        text-align: center;
+        h1 {
+          @include Text($text-2xl, $text-bold, $c1-200);
+          line-height: 1;
+          margin-bottom: 1rem;
+        }
+        p {
+          @include Text($text-base, $text-regular, $c1-50);
+          line-height: 22.5px;
+          margin: 5px auto;
+        }
+      }
+      .footer-top-btn {
+        display: flex;
+        justify-content: center;
+        margin-top: 3rem;
+        .btn-book {
+          @include Button(
+            transparent,
+            1px solid $primary,
+            0.25rem,
+            0px 30px,
+            none
+          );
+          display: inline-block;
+          line-height: 52px;
+          @include Text($text-sm, $text-bold, $primary);
+          margin-right: 0.5rem;
+          transition: all 0.3s;
+          &:hover {
+            background-color: $primary;
+            color: $white;
+            transition: all 0.3s;
+          }
+        }
+        .btn-start {
+          @include Button(
+            $primary,
+            1px solid $primary,
+            0.25rem,
+            0px 30px,
+            none
+          );
+          display: inline-block;
+          line-height: 52px;
+          @include Text($text-sm, $text-bold, $white);
+          margin-left: 0.5rem;
+          transition: all 0.3s;
+          &:hover {
+            transition: all 0.3s;
+            background-color: $c2-400;
+            border-color: $c2-300;
+          }
+        }
+      }
+    }
+  }
+}
