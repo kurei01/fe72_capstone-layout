@@ -255,4 +255,89 @@ a {
   transition: all 0.3s;
   background-color: #d62f58;
   border-color: #cf2952;
+}
+.footer .footer-bottom {
+  background-color: #f7f9fc;
+}
+.footer .footer-bottom .container {
+  padding: 3rem 0;
+}
+.footer .footer-bottom .container .row .col .other-links .col .item h2 {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #2c3038;
+  line-height: 25px;
+  margin-bottom: 1.875rem;
+}
+.footer .footer-bottom .container .row .col .other-links .col .item a {
+  font-size: 1rem;
+  font-weight: 400;
+  color: #656f7b;
+  line-height: 25px;
+  margin: 0.675rem 0;
+}
+.footer .footer-bottom .container .row .news {
+  padding-left: 100px;
+}
+.footer .footer-bottom .container .row .news .item h2 {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #2c3038;
+  line-height: 25px;
+  margin-bottom: 1.875rem;
+}
+.footer .footer-bottom .container .row .news .item .get_update-box {
+  background-color: #fff;
+  border: 1px solid white;
+  border-radius: 6px;
+  padding: 1.75rem;
+  box-shadow: 1px 5px 7.5px rgba(196, 196, 196, 0.2);
+}
+.footer .footer-bottom .container .row .news .item .get_update-box h3 {
+  font-size: 1.125rem;
+  font-weight: 500;
+  color: #2c3038;
+  line-height: 25px;
+  margin-bottom: 1.875rem;
+}
+.footer .footer-bottom .container .row .news .item .get_update-box form {
+  margin-bottom: 1rem;
+}
+.footer .footer-bottom .container .row .news .item .get_update-box form input {
+  border: none;
+  padding: 12px 20px;
+  outline: none;
+  width: 78%;
+  border-radius: 6px;
+  border: 1px solid transparent;
+  font-size: 1rem;
+  font-weight: 600;
+  color: #2c3038;
+  background-color: #f7f9fc;
+  overflow: visible;
+}
+.footer .footer-bottom .container .row .news .item .get_update-box form button {
+  border: none;
+  outline: none;
+  text-align: center;
+  padding: 12px 20px;
+  cursor: pointer;
+  width: 20%;
+  border-radius: 6px;
+  border: 1px solid transparent;
+  background-color: #dc4f72;
+  font-size: 1rem;
+  font-weight: 600;
+  color: #fff;
+}
+.footer .footer-bottom .container .row .news .item .get_update-box p {
+  font-size: 1rem;
+  font-weight: 400;
+  color: #5a5a5a;
+  line-height: 22px;
+}
+.footer .footer-bottom .container .below-section {
+  margin-top: 3rem;
+  border-top: 1px solid #eaeaea;
+  padding: 1.5rem 0;
 }/*# sourceMappingURL=home.css.map */
