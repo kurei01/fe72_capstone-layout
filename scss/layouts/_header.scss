@@ -7,8 +7,15 @@ a {
 }
 
 .header {
+  background-color: #fff;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  box-shadow: 0 3px 9px rgba(0, 0, 0, 0.05);
+  transition: all 0.4s ease 0s;
+  padding: 1rem 0;
   .container {
-    padding: 1.5rem 0;
     display: flex;
     justify-content: space-between;
     .logo-header {
@@ -18,11 +25,11 @@ a {
         display: flex;
         @include Text($text-lg, $text-extraBold, $primary);
         i {
-          line-height: 52px;
+          line-height: 68px;
         }
         p {
           margin-left: 0.3rem;
-          line-height: 52px;
+          line-height: 68px;
         }
       }
     }
@@ -176,4 +183,8 @@ a {
       }
     }
   }
+}
+
+.onScroll {
+  padding: 0;
 }
