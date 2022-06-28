@@ -798,6 +798,11 @@ a, li, ol {
           transform: translateY(-0.5rem);
 }
 
+.team .main .item:hover .bot-item .name-pos {
+  color: #dc4f72;
+  cursor: pointer;
+}
+
 .team .main .item .thumb {
   width: 100%;
   height: 250px;

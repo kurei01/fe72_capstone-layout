@@ -199,53 +199,57 @@
     filter: grayscale(1);
     transition: 0.3s ease;
     padding: 1.5rem 2rem;
-    &:hover{
+    &:hover {
       filter: grayscale(0);
     }
   }
 }
 
-.team{
+.team {
   background-color: $light-bg;
-  .main{
-    .item{
+  .main {
+    .item {
       transition: 0.3s ease-in-out;
-      &:hover{
-        box-shadow: 0 0.5rem 1rem rgba(0,0,0, 0.09);
+      &:hover {
+        box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.09);
         transform: translateY(-0.5rem);
       }
-      .thumb{
+      &:hover .bot-item .name-pos {
+        color: $primary;
+        cursor: pointer;
+      }
+      .thumb {
         width: 100%;
         height: 250px;
         display: inline-block;
         overflow: hidden;
         background-color: #f3f6f9;
         position: relative;
-        img{
+        img {
           width: 100%;
           border-radius: 6px 6px 0 0;
           object-fit: cover;
           object-position: center;
         }
       }
-      .bot-item{
+      .bot-item {
         padding: 16px;
         background-color: $white;
         border-radius: 0 0 6px 6px;
         border: 1px solid #eee;
         border-top: none;
         margin-top: -6px;
-        .name-pos{
+        .name-pos {
           @include Text($text-lg, $text-extraBold, $c1-200);
           line-height: 26px;
         }
-        p{
+        p {
           @include Text($text-base, $text-regular, $c1-50);
           line-height: 24px;
           margin: 2px 0 14px;
         }
-        .social{
-          a{
+        .social {
+          a {
             display: inline-block;
             margin-right: 10px;
             width: 30px;
@@ -253,16 +257,16 @@
             border-radius: 50%;
             line-height: 30px;
             text-align: center;
-            i{
+            i {
               line-height: 30px;
               color: #fff;
               font-size: 12px;
             }
           }
-          .facebook{
+          .facebook {
             background-color: #3b5998;
           }
-          .twitter{
+          .twitter {
             background-color: #1da1f2;
           }
         }
