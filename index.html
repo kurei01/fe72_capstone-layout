@@ -41,14 +41,15 @@
         </div>
         <div class="wrap-navbar">
           <nav class="navbar">
-            <a href="/index.html" class="nav-item">Home</a>
+            <a href="index.html" class="nav-item">Home</a>
             <a href="/about.html" class="nav-item">About</a>
             <a href="/services.html" class="nav-item">Services</a>
-            <div class="drop_down-menu">
+            <div class="drop_down-menu" onclick="">
+              <!-- sau đó gắn onClick cho cái thẻ a này  -->
               <a href="#" class="drop_down-btn" role="button"
                 >Pages <i class="fa-solid fa-angle-down"></i
               ></a>
-              <div class="menu_item">
+              <div class="menu_item" id="drop-down-content">
                 <a href="/blog-post.html" class="item">Blog post</a>
                 <a href="/blog-single.html" class="item">Blog single</a>
                 <a href="#" class="item">Landing page</a>

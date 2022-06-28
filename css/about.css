@@ -24,14 +24,14 @@ a {
 
 .header {
   background-color: #fff;
-  position: -webkit-sticky;
-  position: sticky;
+  position: fixed;
   top: 0;
   left: 0;
   right: 0;
   box-shadow: 0 3px 9px rgba(0, 0, 0, 0.05);
   transition: all 0.4s ease 0s;
   padding: 1rem 0;
+  z-index: 900;
 }
 .header .container {
   display: flex;
@@ -116,13 +116,14 @@ a {
 .header .container .wrap-navbar .navbar .drop_down-menu .drop_down-btn:focus ~ .menu_item {
   display: block;
 }
-.header .container .wrap-navbar .navbar .drop_down-menu .drop_down-btn:default ~ .menu_item {
+.header .container .wrap-navbar .navbar .drop_down-menu .drop_down-btn:focus ~ .menu_item .item {
   display: block;
 }
 .header .container .wrap-navbar .navbar .drop_down-menu .drop_down-btn i {
   font-size: 0.75rem;
 }
 .header .container .wrap-navbar .navbar .drop_down-menu .menu_item {
+  z-index: 1000;
   display: none;
   padding: 1.3rem 1.5rem;
   border: 1px solid rgba(0, 0, 0, 0.1490196078);
