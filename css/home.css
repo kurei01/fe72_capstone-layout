@@ -517,6 +517,51 @@ a {
   line-height: 24.5px;
 }
 
+.about-us .container .row .book-info h6 {
+  text-transform: uppercase;
+}
+.about-us .container .row .book-info h3 {
+  line-height: 40px;
+  font-size: 2.2rem;
+  font-weight: 700;
+  color: #2c3038;
+}
+.about-us .container .row .book-info p {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 1rem;
+  font-weight: 400;
+  color: #5a5a5a;
+  line-height: 24.4px;
+}
+.about-us .container .row .book-info .btn-read-more {
+  transition: 0.3s ease-out;
+  display: inline-block;
+  line-height: 52px;
+  margin: 0px;
+  padding: 0px 30px;
+  text-transform: uppercase;
+  cursor: pointer;
+  font-size: 0.875rem;
+  font-weight: 700;
+  color: #fff;
+  background-color: #dc4f72;
+  border: 1px solid #dc4f72;
+  border-radius: 0.25rem;
+}
+.about-us .container .row .book-info .btn-read-more:hover {
+  background-color: #d62f58;
+  border: 1px solid #cf2952;
+}
+.about-us .container .row .img-about {
+  width: 50%;
+}
+.about-us .container .row .img-about img {
+  transition: 0.3s ease-in-out;
+  border-radius: 6px;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+}
+
 .wrapper-bottom {
   width: 100%;
   height: 450px;
