@@ -17,3 +17,42 @@ body {
   margin: 0 auto;
   max-width: 1280px;
 }
+
+a,li,ol{
+  list-style: none;
+  text-decoration: none;
+}
+
+.title{
+  max-width: 900px;
+  margin: 0 auto;
+  h2{
+    @include Text($text-3xl,$text-extraBold,$c1-200);
+    line-height: 3.4375rem;
+  }
+  h3{
+    @include Text($text-3xl,$text-bold,$c1-200)
+  }
+  h6{
+    @include Text($text-base,$text-bold,$primary);
+    margin-bottom: 0.3125rem;
+  }
+  p{
+    color: $c1-50;
+    line-height: 1.4rem;
+  }
+}
+
+.breadcrumb{
+  padding: 15px 20px;
+  background-color: $light-bg;
+    @include Text($text-base, $text-regular, $c1-200);
+    a{
+      color: $primary;
+      margin-right: 5px;
+      &:hover{
+        text-decoration: underline;
+      }
+    }
+
+}
