@@ -15,7 +15,7 @@ body {
 
 .container {
   margin: 0 auto;
-  max-width: 1280px;
+  max-width: 1200px;
 }
 
 a,li,ol{
@@ -46,7 +46,8 @@ a,li,ol{
 .breadcrumb{
   padding: 15px 20px;
   background-color: $light-bg;
-    @include Text($text-base, $text-regular, $c1-200);
+  margin-bottom: 0.5rem;
+    @include Text($text-sm, $text-regular, $c1-200);
     a{
       color: $primary;
       margin-right: 5px;

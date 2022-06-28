@@ -46,9 +46,10 @@
           <a href="./index.html" class="nav-item">Home</a>
           <a href="./about.html" class="nav-item active">About</a>
           <a href="./services.html" class="nav-item">Services</a>
-          <div class="drop_down-menu">
-            <a href="#" class="drop_down-btn" role="button">Pages <i class="fa-solid fa-angle-down"></i></a>
-            <div class="menu_item">
+          <div class="drop_down-menu" onclick="dropDownMenu()">
+            <!-- sau đó gắn onClick cho cái thẻ a này  -->
+            <a class="drop_down-btn" role="button">Pages <i class="fa-solid fa-angle-down"></i></a>
+            <div class="menu_item" id="drop-down-content">
               <a href="./blog-post.html" class="item">Blog post</a>
               <a href="./blog-single.html" class="item">Blog single</a>
               <a href="./index.html" class="item">Landing page</a>
@@ -263,7 +264,7 @@
     <div class="container py-lg-5">
       <div class="row">
         <div class="col-md-12">
-          <div class="owl-three owl-carousel owl-theme owl-loaded owl-drag">
+          <div class="owl-three owl-carousel owl-theme">
             <div class="item">
               <img src="./img/logo1.jpg" alt="company-logo" class="img-fluid" />
             </div>
@@ -502,9 +503,9 @@
     <div class="footer-bottom">
       <div class="container">
         <div class="row">
-          <div class="col">
+          <div class="col col-lg-6">
             <div class="row other-links">
-              <div class="col">
+              <div class="col col-md-4">
                 <div class="item d-flex flex-column">
                   <h2>Company</h2>
                   <a href="#">Home</a>
@@ -514,7 +515,7 @@
                   <a href="#">Contact Us</a>
                 </div>
               </div>
-              <div class="col">
+              <div class="col col-md-4 mt-md-0 mt-4">
                 <div class="item d-flex flex-column">
                   <h2>Useful Links</h2>
                   <a href="#">Case Studies</a>
@@ -524,7 +525,7 @@
                   <a href="#">Our People</a>
                 </div>
               </div>
-              <div class="col">
+              <div class="col col-md-4 mt-md-0 mt-4">
                 <div class="item d-flex flex-column">
                   <h2>Our Services</h2>
                   <a href="#">Privacy Policy</a>
@@ -536,7 +537,7 @@
               </div>
             </div>
           </div>
-          <div class="col news">
+          <div class="col news col-lg-6 col-md-12 ps-lg-5 mt-lg-0 mt-5">
             <div class="item">
               <h2>Newsletter</h2>
               <div class="get_update-box">
@@ -553,14 +554,14 @@
             </div>
           </div>
         </div>
-        <div class="below-section d-flex">
-          <div class="col">
+        <div class="below-section d-flex align-items-center pt-4 mt-5">
+          <div class="col text-lg-start text-center">
             <p class="copyright">
               © 2020 Masterwork. All rights reserved | Designed by
               <a href="https://w3layouts.com/">W3Layouts</a>
             </p>
           </div>
-          <div class="col text-end">
+          <div class="col mt-lg-0 mt-3 text-end">
             <div class="social">
               <i class="fa-brands fa-facebook-f"></i>
               <i class="fa-brands fa-linkedin-in"></i>
@@ -620,7 +621,7 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
     integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
     crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-  <!-- script for customers -->
+  <!-- script for customers with magnific-->
   <script>
     $(document).ready(function () {
       $(".owl-three").owlCarousel({

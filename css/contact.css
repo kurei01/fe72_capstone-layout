@@ -15,7 +15,7 @@ body {
 
 .container {
   margin: 0 auto;
-  max-width: 1280px;
+  max-width: 1200px;
 }
 
 a, li, ol {
@@ -56,7 +56,8 @@ a, li, ol {
 .breadcrumb {
   padding: 15px 20px;
   background-color: #f7f9fc;
-  font-size: 1rem;
+  margin-bottom: 0.5rem;
+  font-size: 0.875rem;
   font-weight: 400;
   color: #2c3038;
 }
@@ -161,10 +162,6 @@ a, li, ol {
   transition: all 0.5s;
 }
 
-.header .container .wrap-navbar .navbar .nav-item:active {
-  color: #dc4f72;
-}
-
 .header .container .wrap-navbar .navbar .active {
   color: #dc4f72;
 }
@@ -185,11 +182,11 @@ a, li, ol {
 
 .header .container .wrap-navbar .navbar .drop_down-menu .drop_down-btn::before {
   position: absolute;
+  bottom: 0;
   content: "";
   height: 2px;
   background-color: #dc4f72;
   width: 0;
-  bottom: 0.875rem;
   -webkit-transition: all 0.5s;
   transition: all 0.5s;
 }
@@ -311,6 +308,10 @@ a, li, ol {
 .onScroll {
   padding: 0;
   z-index: 1030;
+}
+
+.footer {
+  margin-bottom: 300px;
 }
 
 .footer .footer-top .container {

@@ -60,9 +60,6 @@
             width: 35%;
             transition: all 0.5s;
           }
-          &:active{
-            color: $primary;
-          }
         }
         .active{
           color: $primary;
@@ -79,11 +76,11 @@
             @include Text($text-base, $text-regular, $c1-200);
             &::before {
               position: absolute;
+              bottom: 0;
               content: "";
               height: 2px;
               background-color: $primary;
               width: 0;
-              bottom: 0.875rem;
               transition: all 0.5s;
             }
             &:hover {

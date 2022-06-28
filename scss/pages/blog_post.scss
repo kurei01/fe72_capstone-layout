@@ -3,3 +3,188 @@
 @import "../common/base";
 @import "../layouts/header";
 @import "../layouts/footer";
+
+.date {
+  @include Text($text-md, $text-extraBold, $white);
+  background-color: $primary;
+  padding: 15px;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.blog-info {
+  .tag-label {
+    padding: 5px 16px;
+    display: inline-block;
+    border-radius: 25px;
+    font-size: 0.8125rem;
+    margin-bottom: 1rem;
+    font-weight: $text-semiBold;
+  }
+  .tag-label.green {
+    background-color: rgba(0, 128, 0, 0.2);
+    color: #008000;
+  }
+  .tag-label.blue {
+    background-color: rgba(0, 0, 255, 0.2);
+    color: #0000ff;
+  }
+  .tag-label.red {
+    background-color: rgba(238, 97, 120, 0.2);
+    color: $primary;
+  }
+  p {
+    line-height: 1.6rem;
+    color: $c1-50;
+  }
+}
+
+.blog {
+  background-color: $light-bg;
+  .owl-theme .owl-nav.disabled + .owl-dots {
+    display: none;
+  }
+  .owl-carousel .owl-nav.disabled {
+    display: block;
+  }
+  .owl-carousel .owl-nav button.owl-prev,
+  .owl-carousel .owl-nav button.owl-next {
+    color: $white;
+    font-size: 40px;
+    margin: 0;
+    background-color: rgba(220, 79, 114, 0.4);
+    transition: 0.3s ease-in-out;
+    height: 40px;
+    width: 40px;
+    line-height: 40px;
+    border-radius: 50%;
+    position: absolute;
+    bottom: 45%;
+    &:hover {
+      color: $primary;
+      background-color: $primary;
+      color: #fff;
+    }
+  }
+  .owl-carousel .owl-nav button.owl-prev {
+    left: 5px;
+  }
+  .owl-carousel .owl-nav button.owl-next {
+    right: 5px;
+  }
+  .item {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    border-radius: 6px;
+    transition: 0.3s ease-in;
+    height: 100%;
+    background-color: #fff;
+    box-shadow: 1px 5px 7.5px rgba(196, 196, 196, 0.2);
+    &:hover .blog-info .btn-news i {
+      right: -16px;
+    }
+    a {
+      border-radius: 6px 0 0 6px;
+      overflow: hidden;
+      position: relative;
+      display: block;
+      img {
+        transition: 0.3s ease-in-out;
+        max-width: 100%;
+      }
+    }
+    .blog-info {
+      padding: 30px;
+      border-radius: 0 6px 6px 0;
+      h4 a {
+        @include Text($text-xml, $text-semiBold, $c1-200);
+        line-height: 2.2rem;
+        margin-bottom: 1rem;
+        &:hover {
+          color: $primary;
+        }
+      }
+      .btn-news {
+        color: $primary;
+        transition: 0.3s ease-in-out;
+        position: relative;
+        display: inline-block;
+        overflow: visible;
+        i {
+          font-size: 60%;
+          vertical-align: middle;
+          position: absolute;
+          right: -13px;
+          top: 8px;
+          transition: 0.3s ease-in-out;
+        }
+      }
+    }
+  }
+}
+
+.news {
+  .item {
+    border-radius: 6px;
+    transition: 0.3s ease-in;
+    display: block;
+    height: 100%;
+    background-color: #fff;
+    border: 1px solid #eee;
+
+    &:hover {
+      transform: translateY(-0.5rem);
+      box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.09);
+    }
+    &:hover img {
+      filter: grayscale(0);
+    }
+    &:hover .blog-info .btn-news i {
+      right: -16px;
+    }
+    &:hover .blog-info h4 a{
+      color: $primary;
+    }
+    a {
+      border-radius: 6px 6px 0 0;
+      overflow: hidden;
+      position: relative;
+      display: block;
+      img {
+        transition: 0.3s ease-in-out;
+        max-width: 100%;
+        filter: grayscale(1);
+      }
+    }
+    .blog-info {
+      padding: 30px 20px;
+      border-radius: 0 0 6px 6px;
+      h4 a {
+        @include Text($text-xl, $text-bold, $c1-200);
+        margin-bottom: 1rem;
+      }
+      p {
+        margin-bottom: 1.25rem;
+        padding-bottom: 1.25rem;
+        border-bottom: 1px solid #eee;
+      }
+      .btn-news {
+        color: $primary;
+        transition: 0.3s ease-in-out;
+        position: relative;
+        display: inline-block;
+        overflow: visible;
+        i {
+          font-size: 60%;
+          vertical-align: middle;
+          position: absolute;
+          right: -13px;
+          top: 8px;
+          transition: 0.3s ease-in-out;
+        }
+      }
+    }
+  }
+}
