@@ -17,6 +17,19 @@ body {
   max-width: 1280px;
 }
 
+.img-fluid {
+  width: 100%;
+  height: auto;
+}
+
+.sub-title {
+  line-height: 20px;
+  margin-bottom: 5px;
+  font-size: 1rem;
+  font-weight: 700;
+  color: #dc4f72;
+}
+
 a {
   text-decoration: none;
   display: block;
@@ -453,6 +466,55 @@ a {
   vertical-align: middle;
   border-style: none;
   transform: rotate(180deg);
+}
+
+.choose-us .container .header-section {
+  max-width: 750px;
+}
+.choose-us .container .header-section h3 {
+  font-size: 3rem;
+  font-weight: 700;
+  color: #2c3038;
+  line-height: 1;
+}
+.choose-us .container .header-section p {
+  font-size: 1rem;
+  font-weight: 400;
+  color: #5a5a5a;
+  line-height: 22.5px;
+}
+.choose-us .container .row .item .s-block {
+  border-radius: 6px;
+  transition: 0.3s ease-in;
+  background: #f7f9fc;
+  padding: 3rem 2rem;
+  border: 1px solid #f7f9fc;
+}
+.choose-us .container .row .item .s-block:hover {
+  transition: 0.3s ease-in;
+  background-color: #fff;
+  border: 1px solid #eee;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.09);
+  transform: translateY(-0.5rem);
+}
+.choose-us .container .row .item .s-block a img {
+  vertical-align: middle;
+  border-style: none;
+  height: 72px;
+  width: 72px;
+}
+.choose-us .container .row .item .s-block a h3 {
+  font-size: 1.625rem;
+  font-weight: 700;
+  color: #2c3038;
+  line-height: 35px;
+}
+.choose-us .container .row .item .s-block a p {
+  font-size: 1rem;
+  font-weight: 400;
+  color: #5a5a5a;
+  margin-top: 15px;
+  line-height: 24.5px;
 }
 
 .wrapper-bottom {

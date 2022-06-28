@@ -71,6 +71,57 @@
   }
 }
 
+.choose-us {
+  .container {
+    .header-section {
+      max-width: 750px;
+      h3 {
+        @include Text($text-2xl, $text-bold, $c1-200);
+        line-height: 1;
+      }
+      p {
+        @include Text($text-base, $text-regular, $c1-50);
+        line-height: 22.5px;
+      }
+    }
+    .row {
+      .item {
+        .s-block {
+          border-radius: 6px;
+          transition: 0.3s ease-in;
+          background: $light-bg;
+          padding: 3rem 2rem;
+          border: 1px solid $light-bg;
+          &:hover {
+            transition: 0.3s ease-in;
+            background-color: $white;
+            border: 1px solid #eee;
+            box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.09);
+            transform: translateY(-0.5rem);
+          }
+          a {
+            img {
+              vertical-align: middle;
+              border-style: none;
+              height: 72px;
+              width: 72px;
+            }
+            h3 {
+              @include Text($text-lg-lger, $text-bold, $c1-200);
+              line-height: 35px;
+            }
+            p {
+              @include Text($text-base, $text-regular, $c1-50);
+              margin-top: 15px;
+              line-height: 24.5px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
 .wrapper-bottom {
   width: 100%;
   height: 450px;
