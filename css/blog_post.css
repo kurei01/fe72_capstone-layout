@@ -765,3 +765,34 @@ a, li, ol {
   -webkit-transition: 0.3s ease-in-out;
   transition: 0.3s ease-in-out;
 }
+
+.news .pagination .page-item .page-link {
+  color: #5a5a5a;
+  font-weight: 600;
+  border: 1px solid #f7f9fc;
+  margin-right: 5px;
+  border-radius: 6px;
+  -webkit-box-shadow: 1px 5px 7.5px rgba(196, 196, 196, 0.2);
+          box-shadow: 1px 5px 7.5px rgba(196, 196, 196, 0.2);
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+}
+
+.news .pagination .page-item .page-link i {
+  font-size: 0.75rem;
+}
+
+.news .pagination .page-item .page-link:hover {
+  color: #dc4f72;
+  border-color: #dc4f72;
+  -webkit-box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.09);
+          box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.09);
+  background-color: #fff;
+}
+
+.news .pagination .page-item .page-link.active {
+  color: #dc4f72;
+  border-color: #dc4f72;
+  -webkit-box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.09);
+          box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.09);
+}
