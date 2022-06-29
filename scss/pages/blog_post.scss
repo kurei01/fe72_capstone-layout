@@ -4,6 +4,7 @@
 @import "../layouts/header";
 @import "../layouts/footer";
 
+
 .date {
   @include Text($text-md, $text-extraBold, $white);
   background-color: $primary;
@@ -184,6 +185,34 @@
           top: 8px;
           transition: 0.3s ease-in-out;
         }
+      }
+    }
+  }
+
+  .pagination{
+    .page-item{
+      .page-link{
+        color: $c1-50;
+        font-weight: $text-semiBold;
+        border: 1px solid $light-bg;
+        margin-right: 5px;
+        border-radius: 6px;
+        box-shadow: 1px 5px 7.5px rgba(196, 196, 196, 0.2);
+        transition: 0.3s ease-in-out;
+        i{
+          font-size: 0.75rem;
+        }
+        &:hover{
+          color: $primary;
+          border-color: $primary;
+          box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.09);
+          background-color: #fff;
+        }
+      }
+      .page-link.active{
+        color: $primary;
+        border-color: $primary;
+        box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.09);
       }
     }
   }
