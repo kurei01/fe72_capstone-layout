@@ -417,40 +417,4 @@ a {
   text-align: center;
   display: inline-block;
   margin-left: 5px;
-}
-
-.header-section {
-  margin: 0 auto 3rem auto;
-  text-align: center;
-}
-.header-section h2 {
-  font-size: 2.5rem;
-  font-weight: 800;
-  color: #2c3038;
-  line-height: 3.4375rem;
-}
-
-.title h6 {
-  font-size: 1rem;
-  font-weight: 700;
-  color: #dc4f72;
-  text-transform: uppercase;
-  margin-bottom: 0.3125rem;
-  line-height: 1.25rem;
-}
-.title h3 {
-  font-size: 2.5rem;
-  font-weight: 700;
-  color: #2c3038;
-}
-.title p {
-  font-size: 1rem;
-  font-weight: 400;
-  color: #5a5a5a;
-  line-height: 1.4rem;
-  margin: 1rem auto;
-}
-
-.contact {
-  position: relative;
-}/*# sourceMappingURL=about.css.map */
+}/*# sourceMappingURL=services.css.map */

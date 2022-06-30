@@ -46,7 +46,7 @@
             <a href="/services.html" target="_blank" class="nav-item"
               >Services</a
             >
-            <div class="drop_down-menu" onclick="">
+            <div class="drop_down-menu" onclick="dropDownMenu()">
               <!-- sau đó gắn onClick cho cái thẻ a này  -->
               <a href="#" class="drop_down-btn" role="button"
                 >Pages <i class="fa-solid fa-angle-down"></i
@@ -91,7 +91,7 @@
       </div>
     </section>
 
-    <section class="choose-us py-5">
+    <section class="choose-us py-5" id="choose-us">
       <div class="container py-md-3">
         <div class="header-section text-center mx-auto">
           <h6 class="sub-title">WHY CHOOSE US</h6>
@@ -143,7 +143,7 @@
       </div>
     </section>
 
-    <section class="about-us">
+    <section class="about-us" id="about-us">
       <div class="container py-lg-3 mt-3">
         <div class="row align-items-center">
           <div class="col-lg-6 book-info pr-lg-5">
@@ -168,6 +168,528 @@
               alt=""
               class="img-fluid shadow img-curve"
             />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="statistics pb-5 pt-4">
+      <div class="container pb-lg-3">
+        <div class="row stats-content">
+          <div class="col col-lg-4 col-sm-6">
+            <div class="stats_info">
+              <h4>Happy Customers</h4>
+              <p class="counter">10458</p>
+              <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facere
+                atque sed.
+              </p>
+            </div>
+          </div>
+          <div class="col col-lg-4 col-sm-6 mt-sm-0 mt-4">
+            <div class="stats_info">
+              <h4>Winning Awards</h4>
+              <p class="counter">890</p>
+              <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facere
+                atque sed.
+              </p>
+            </div>
+          </div>
+          <div class="col col-lg-4 col-sm-6 mt-lg-0 mt-sm-5 mt-4">
+            <div class="stats_info">
+              <h4>Completed Projects</h4>
+              <p class="counter">5345</p>
+              <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facere
+                atque sed.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="ourselves" id="ourselves">
+      <div class="new-block top-bottom">
+        <div class="container">
+          <div class="middle-section">
+            <div class="section-width">
+              <h2>
+                We are true to ourselves, and commit to always perform at our
+                best.
+              </h2>
+            </div>
+            <div class="link-list-menu">
+              <p class="mt-md-4 mt-3 mb-md-5 mb-4">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Necessitatibus, doloribus atque. Corrupti exercitationem
+                voluptatem ipsum iste consequuntur et vitae voluptas temporibus?
+                Maxime dolores amet voluptatum illo consequatur placeat fugit
+                ducimus.
+              </p>
+              <a href="about.html" class="btn btn-light theme-button"
+                >Read more</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="news py-5" id="news">
+      <div class="container py-lg-3">
+        <div class="header-section text-center mx-auto">
+          <h6 class="sub-title">We are here for you</h6>
+          <h3>Explore Solutions</h3>
+          <p class="my-3">
+            Vestibulum ante ipsum primis in faucibus orci luctus et ultrices
+            posuere cubilia Curae; Nulla mollis dapibus nunc, ut rhoncus turpis
+            sodales quis. Integer sit amet mattis quam.
+          </p>
+        </div>
+        <div class="article">
+          <div class="row">
+            <div class="coll col-lg-4 col-md-6 mt-5">
+              <div class="info">
+                <a href="blog-single.html" class="d-block zoom">
+                  <img src="./img/b1.jpg" class="img-fluid news-image" alt="" />
+                  <p class="date">26 Jan, 2020</p>
+                </a>
+                <div class="blog-info">
+                  <label class="tag-label red">Bussiness</label>
+                  <h4>
+                    <a href="blog-single.html"
+                      >Corporate, Business & Digital Agency</a
+                    >
+                  </h4>
+                  <p class="block-text">
+                    Lorem ipsum dolor sit amet nostrum ad minus libero fugiat
+                    molestiae ullam ipsam quas unde earum...
+                  </p>
+                  <a href="" class="btn btn-news">
+                    Know More <i class="fa-solid fa-arrow-right"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="coll col-lg-4 col-md-6 mt-5">
+              <div class="info">
+                <a href="blog-single.html" class="d-block zoom">
+                  <img src="./img/b7.jpg" class="img-fluid news-image" alt="" />
+                  <p class="date">15 Apr, 2020</p>
+                </a>
+                <div class="blog-info">
+                  <label class="tag-label green">Design</label>
+                  <h4>
+                    <a href="blog-single.html"
+                      >Corporate, Business & Digital Agency</a
+                    >
+                  </h4>
+                  <p class="block-text">
+                    Lorem ipsum dolor sit amet nostrum ad minus libero fugiat
+                    molestiae ullam ipsam quas unde earum...
+                  </p>
+                  <a href="" class="btn btn-news">
+                    Know More <i class="fa-solid fa-arrow-right"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="coll col-lg-4 offset-md-3 offset-lg-0 col-md-6 mt-5">
+              <div class="info">
+                <a href="blog-single.html" class="d-block zoom">
+                  <img src="./img/b3.jpg" class="img-fluid news-image" alt="" />
+                  <p class="date">25 Jun, 2020</p>
+                </a>
+                <div class="blog-info">
+                  <label class="tag-label blue">Industry</label>
+                  <h4>
+                    <a href="blog-single.html"
+                      >Corporate, Business & Digital Agency</a
+                    >
+                  </h4>
+                  <p class="block-text">
+                    Lorem ipsum dolor sit amet nostrum ad minus libero fugiat
+                    molestiae ullam ipsam quas unde earum...
+                  </p>
+                  <a href="" class="btn btn-news">
+                    Know More <i class="fa-solid fa-arrow-right"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="faq py-5" id="faq">
+      <div class="container py-lg-5">
+        <div class="header-section text-center mx-auto">
+          <h6 class="sub-title">Questions and Answers</h6>
+          <h3>General FAQs</h3>
+          <p class="my-3">
+            Vestibulum ante ipsum primis in faucibus orci luctus et ultrices
+            posuere cubilia Curae; Nulla mollis dapibus nunc, ut rhoncus turpis
+            sodales quis. Integer sit amet mattis quam.
+          </p>
+        </div>
+        <div class="row">
+          <div class="col-img col-md-5 mt-5">
+            <div class="faq-image">
+              <img src="./img/women.jpg" alt="" class="img-fluid shadow" />
+            </div>
+          </div>
+          <div class="col-content col-md-7 mt-5 pl-lg-5">
+            <div class="faq-block">
+              <div class="faq-page">
+                <ul>
+                  <li>
+                    <input type="checkbox" checked />
+                    <i></i>
+                    <h2>There are many passages but the majority?</h2>
+                    <p>
+                      Voluptates amet earum velit nobis aliquam laboriosam nihil
+                      debitis facere voluptatibus consectetur quae quasi fuga,
+                      ad corrupti libero omnis sapiente non assumenda, incidunt
+                      officiis eaque iste minima autem.
+                    </p>
+                  </li>
+                  <li>
+                    <input type="checkbox" checked />
+                    <i></i>
+                    <h2>Sed ut perspiciatis unde omnis?</h2>
+                    <p>
+                      Sit amet consectetur adipisicing elit. Voluptates amet
+                      earum velit nobis aliquam laboriosam nihil debitis animi
+                      vitae eos nisi laudantium. Tempore reiciendis ipsam culpa,
+                      qui voluptates eveniet, incidunt officiis eaque iste
+                      minima autem.
+                    </p>
+                  </li>
+                  <li>
+                    <input type="checkbox" checked />
+                    <i></i>
+                    <h2>At vero eos iusto odio ducimus qui?</h2>
+                    <p>
+                      Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                      Voluptates amet earum velit nobis aliquam laboriosam nihil
+                      quasi fuga, ad corrupti libero omnis sapiente non
+                      assumenda excepturi aperiam animi vitae eos nisi
+                      laudantium. Tempore reiciendis ipsam culpa, qui voluptates
+                      eveniet, incidunt officiis eaque iste minima autem.
+                    </p>
+                  </li>
+                  <li>
+                    <input type="checkbox" checked />
+                    <i></i>
+                    <h2>We denounce with righteous?</h2>
+                    <p>
+                      Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                      Voluptates amet earum velit nobis aliquam laboriosam nihil
+                      debitis facere voluptatibus consectetur quae quasi fuga,
+                      ad corrupti libero omnis sapiente non assumenda excepturi
+                      aperiam iste minima autem.
+                    </p>
+                  </li>
+                  <li>
+                    <input type="checkbox" checked />
+                    <i></i>
+                    <h2>perspiciatis unde omnis?</h2>
+                    <p>
+                      Sit amet consectetur adipisicing elit. Voluptates amet
+                      earum velit nobis aliquam laboriosam nihil debitis animi
+                      vitae eos nisi laudantium. Tempore reiciendis ipsam culpa,
+                      qui voluptates eveniet, incidunt officiis eaque iste
+                      minima autem.
+                    </p>
+                  </li>
+                  <li>
+                    <input type="checkbox" checked />
+                    <i></i>
+                    <h2>At vero eos iusto odio ducimus qui?</h2>
+                    <p>
+                      Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                      Voluptates amet earum velit nobis aliquam laboriosam nihil
+                      debitis facere voluptatibus consectetur quae quasi fuga,
+                      ad corrupti libero omnis sapiente non assumenda excepturi
+                      aperiam iste minima autem.
+                    </p>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="products py-5 mb-4">
+      <div class="container py-lg-3">
+        <div class="header-section text-center mx-auto">
+          <h6 class="sub-title">FEATURED CASES</h6>
+          <h3>Completed Projects</h3>
+          <p class="my-3">
+            Vestibulum ante ipsum primis in faucibus orci luctus et ultrices
+            posuere cubilia Curae; Nulla mollis dapibus nunc, ut rhoncus turpis
+            sodales quis. Integer sit amet mattis quam.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="testimonials" id="testimonials">
+      <div class="testimonials-block py-5">
+        <div class="container py-lg-3">
+          <div class="header-section text-center mx-auto">
+            <h6 class="sub-title">OUR CLIENTS TESTIMONIALS</h6>
+            <h3>What People Say</h3>
+            <p class="my-3">
+              Vestibulum ante ipsum primis in faucibus orci luctus et ultrices
+              posuere cubilia Curae; Nulla mollis dapibus nunc, ut rhoncus
+              turpis sodales quis. Integer sit amet mattis quam.
+            </p>
+          </div>
+          <div class="row mt-4">
+            <div class="col-md-12 mx-auto pb-5">
+              <div class="owl-two owl-carousel owl-theme owl-loaded owl-drag">
+                <div class="owl-stage-outer">
+                  <div
+                    class="owl-stage"
+                    style="
+                      transform: translate3d(-2852px, 0px, 0px);
+                      transition: all 0s ease 0s;
+                      width: 4564px;
+                    "
+                  >
+                    <div class="owl-item cloned" style="width: 570.5px">
+                      <div class="item">
+                        <div class="slider-info mt-lg-4 mt-3">
+                          <div class="img-circle">
+                            <img
+                              src=""
+                              alt=""
+                              class="img-fluid testimonial-img"
+                            />
+                            <div class="message">
+                              <i class="fa-solid fa-quote-left"></i>
+                              <p>
+                                Lorem ipsum dolor sit amet consectetur
+                                adipisicing elit. Assumenda corporis deleniti
+                                praesentium doloremque. Repellendus soluta quos
+                                nemo quisquam consectetur temporibus quam
+                                obcaecati sapiente quaerat et.
+                              </p>
+                              <div class="name mt-4">
+                                <h4>Oliver Bradley</h4>
+                                <p>Company name</p>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="owl-item cloned" style="width: 570.5px">
+                      <div class="item">
+                        <div class="slider-info mt-lg-4 mt-3">
+                          <div class="img-circle">
+                            <img
+                              src=""
+                              alt=""
+                              class="img-fluid testimonial-img"
+                            />
+                            <div class="message">
+                              <i class="fa-solid fa-quote-left"></i>
+                              <p>
+                                Lorem ipsum dolor sit amet consectetur
+                                adipisicing elit. Assumenda corporis deleniti
+                                praesentium doloremque. Repellendus soluta quos
+                                nemo quisquam consectetur temporibus quam
+                                obcaecati sapiente quaerat et.
+                              </p>
+                              <div class="name mt-4">
+                                <h4>Oliver Bradley</h4>
+                                <p>Company name</p>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="owl-item" style="width: 570.5px">
+                      <div class="item">
+                        <div class="slider-info mt-lg-4 mt-3">
+                          <div class="img-circle">
+                            <img
+                              src=""
+                              alt=""
+                              class="img-fluid testimonial-img"
+                            />
+                            <div class="message">
+                              <i class="fa-solid fa-quote-left"></i>
+                              <p>
+                                Lorem ipsum dolor sit amet consectetur
+                                adipisicing elit. Assumenda corporis deleniti
+                                praesentium doloremque. Repellendus soluta quos
+                                nemo quisquam consectetur temporibus quam
+                                obcaecati sapiente quaerat et.
+                              </p>
+                              <div class="name mt-4">
+                                <h4>Oliver Bradley</h4>
+                                <p>Company name</p>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="owl-item" style="width: 570.5px">
+                      <div class="item">
+                        <div class="slider-info mt-lg-4 mt-3">
+                          <div class="img-circle">
+                            <img
+                              src=""
+                              alt=""
+                              class="img-fluid testimonial-img"
+                            />
+                            <div class="message">
+                              <i class="fa-solid fa-quote-left"></i>
+                              <p>
+                                Lorem ipsum dolor sit amet consectetur
+                                adipisicing elit. Assumenda corporis deleniti
+                                praesentium doloremque. Repellendus soluta quos
+                                nemo quisquam consectetur temporibus quam
+                                obcaecati sapiente quaerat et.
+                              </p>
+                              <div class="name mt-4">
+                                <h4>Oliver Bradley</h4>
+                                <p>Company name</p>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="owl-item" style="width: 570.5px">
+                      <div class="item">
+                        <div class="slider-info mt-lg-4 mt-3">
+                          <div class="img-circle">
+                            <img
+                              src=""
+                              alt=""
+                              class="img-fluid testimonial-img"
+                            />
+                            <div class="message">
+                              <i class="fa-solid fa-quote-left"></i>
+                              <p>
+                                Lorem ipsum dolor sit amet consectetur
+                                adipisicing elit. Assumenda corporis deleniti
+                                praesentium doloremque. Repellendus soluta quos
+                                nemo quisquam consectetur temporibus quam
+                                obcaecati sapiente quaerat et.
+                              </p>
+                              <div class="name mt-4">
+                                <h4>Oliver Bradley</h4>
+                                <p>Company name</p>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="owl-item" style="width: 570.5px">
+                      <div class="item">
+                        <div class="slider-info mt-lg-4 mt-3">
+                          <div class="img-circle">
+                            <img
+                              src=""
+                              alt=""
+                              class="img-fluid testimonial-img"
+                            />
+                            <div class="message">
+                              <i class="fa-solid fa-quote-left"></i>
+                              <p>
+                                Lorem ipsum dolor sit amet consectetur
+                                adipisicing elit. Assumenda corporis deleniti
+                                praesentium doloremque. Repellendus soluta quos
+                                nemo quisquam consectetur temporibus quam
+                                obcaecati sapiente quaerat et.
+                              </p>
+                              <div class="name mt-4">
+                                <h4>Oliver Bradley</h4>
+                                <p>Company name</p>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="owl-item cloned" style="width: 570.5px">
+                      <div class="item">
+                        <div class="slider-info mt-lg-4 mt-3">
+                          <div class="img-circle">
+                            <img
+                              src=""
+                              alt=""
+                              class="img-fluid testimonial-img"
+                            />
+                            <div class="message">
+                              <i class="fa-solid fa-quote-left"></i>
+                              <p>
+                                Lorem ipsum dolor sit amet consectetur
+                                adipisicing elit. Assumenda corporis deleniti
+                                praesentium doloremque. Repellendus soluta quos
+                                nemo quisquam consectetur temporibus quam
+                                obcaecati sapiente quaerat et.
+                              </p>
+                              <div class="name mt-4">
+                                <h4>Oliver Bradley</h4>
+                                <p>Company name</p>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="owl-item cloned" style="width: 570.5px">
+                      <div class="item">
+                        <div class="slider-info mt-lg-4 mt-3">
+                          <div class="img-circle">
+                            <img
+                              src=""
+                              alt=""
+                              class="img-fluid testimonial-img"
+                            />
+                            <div class="message">
+                              <i class="fa-solid fa-quote-left"></i>
+                              <p>
+                                Lorem ipsum dolor sit amet consectetur
+                                adipisicing elit. Assumenda corporis deleniti
+                                praesentium doloremque. Repellendus soluta quos
+                                nemo quisquam consectetur temporibus quam
+                                obcaecati sapiente quaerat et.
+                              </p>
+                              <div class="name mt-4">
+                                <h4>Oliver Bradley</h4>
+                                <p>Company name</p>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="owl-nav disabled">
+                  <button
+                    type="button"
+                    role="presentation"
+                    class="owl-prev"
+                  ></button>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -275,14 +797,139 @@
       </div>
     </footer>
     <div class="wrapper-bottom"></div>
-    <script src="/path/to/jquery.waypoints.min.js"></script>
-    <script src="jquery.countup.js"></script>
+
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/countup.js/2.0.0/countUp.min.js"
+      integrity="sha512-E0zfDwA1CopT4gzJmj9tMpd7O6pTpuybTK58eY1GwqptdasUohyImuualLt/S5XvM8CDnbaTNP/7MU3bQ5NmQg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/countup.js/2.0.0/countUp.js"
+      integrity="sha512-oKHFEN8NtMRzI0+BvFZLCS2uQN9LxvQc69/mGICoWfjbXEoEbYLCCfxdHZSU0yXmcGVftm21KkoSOn7+XYJT3A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script>
+      $(".counter").countUp()
+    </script>
+
     <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
       crossorigin="anonymous"
     ></script>
+
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+      integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.js"
+      integrity="sha512-gY25nC63ddE0LcLPhxUJGFxa2GoIyA5FLym4UJqHDEMHjp8RET6Zn/SHo1sltt3WuVtqfyxECP38/daUc/WVEA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script>
+      $(document).ready(function () {
+        $(".owl-one").owlCarousel({
+          loop: true,
+          margin: 0,
+          nav: false,
+          responsiveClass: true,
+          autoplay: false,
+          autoplayTimeout: 5000,
+          autoplaySpeed: 1000,
+          autoplayHoverPause: false,
+          responsive: {
+            0: {
+              items: 1,
+              nav: false,
+            },
+            480: {
+              items: 1,
+              nav: false,
+            },
+            667: {
+              items: 1,
+              nav: false,
+            },
+            1000: {
+              items: 1,
+              nav: false,
+            },
+          },
+        })
+      })
+    </script>
+
+    <script>
+      $(document).ready(function () {
+        $(".owl-two").owlCarousel({
+          loop: true,
+          margin: 0,
+          nav: false,
+          responsiveClass: true,
+          autoplay: false,
+          autoplayTimeout: 5000,
+          autoplaySpeed: 1000,
+          autoplayHoverPause: false,
+          responsive: {
+            0: {
+              items: 1,
+              nav: false,
+            },
+            480: {
+              items: 1,
+              nav: false,
+            },
+            667: {
+              items: 1,
+              nav: false,
+            },
+            1000: {
+              items: 2,
+              nav: false,
+            },
+          },
+        })
+      })
+    </script>
+    <script>
+      $(document).ready(function () {
+        $(".owl-three").owlCarousel({
+          loop: true,
+          margin: 0,
+          nav: false,
+          responsiveClass: true,
+          autoplay: true,
+          autoplayTimeout: 5000,
+          autoplaySpeed: 1000,
+          autoplayHoverPause: false,
+          responsive: {
+            0: {
+              items: 1,
+              nav: false,
+            },
+            480: {
+              items: 2,
+              nav: false,
+            },
+            667: {
+              items: 2,
+              nav: false,
+            },
+            1000: {
+              items: 4,
+              nav: false,
+            },
+          },
+        })
+      })
+    </script>
 
     <script src="./js/index.js"></script>
   </body>

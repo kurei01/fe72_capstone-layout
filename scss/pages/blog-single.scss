@@ -1,0 +1,170 @@
+@import "../theme/mixin";
+@import "../theme/variables";
+@import "../common/base";
+@import "../layouts/header";
+@import "../layouts/footer";
+
+.breadcrumbs {
+  padding: 15px 20px;
+  background: $light-bg;
+  margin-top: 98px;
+  .container {
+    color: $c1-200;
+    font-size: 14px;
+    a {
+      color: $primary;
+      margin: 0 5px 0 0;
+      font-size: 14px;
+      display: inline-block;
+    }
+    .breadcrumb_last {
+    }
+  }
+}
+
+.blog-single {
+  .blog-single1 {
+    .container {
+      .d-grid-1 {
+        display: grid;
+        grid-template-columns: 100%;
+        .text {
+          max-width: 750px;
+          margin: 0 auto;
+          .green {
+            background: rgba(0, 128, 0, 0.2);
+            color: #008000;
+            padding: 5px 16px;
+            display: inline-block;
+            border-radius: 25px;
+            font-size: 13px;
+            font-weight: 600;
+            margin-bottom: 15px;
+          }
+          .text-title {
+            font-size: 45px;
+            line-height: 50px;
+            color: $c1-200;
+            margin: 15px 0;
+            font-weight: 700;
+          }
+          .blog-list {
+            margin-bottom: 15px;
+            padding-bottom: 10px;
+            margin-top: 0;
+            padding-left: 0;
+            li {
+              list-style-type: none;
+              display: inline-block;
+              margin-right: 10px;
+              p {
+                margin: 0;
+                padding: 0;
+                font-size: 15px;
+                line-height: 24.5px;
+
+                font-weight: $text-regular;
+                color: $c1-50;
+                i {
+                  color: $c1-50;
+                }
+              }
+            }
+          }
+        }
+      }
+      .text-bg-image {
+        max-width: 750px;
+        margin: 0 auto;
+        img {
+          border-radius: 6px;
+          transition: 0.3s ease-in-out;
+          &:hover {
+            transform: translateY(-0.5rem);
+            transition: 0.3s ease-in-out;
+          }
+        }
+      }
+      .text-content-text {
+        .d-grid-2 {
+          display: grid;
+          grid-template-columns: 100%;
+          .text2 {
+            .text2-text {
+              max-width: 750px;
+              margin: 0 auto;
+              padding-top: 10px;
+              color: $c1-50;
+            }
+            .single-post-content-1 {
+              max-width: 750px;
+              margin: 0 auto;
+              .coll-left {
+                padding-right: 0;
+                padding-left: 0;
+                img {
+                  border-radius: 6px;
+                  max-width: 100%;
+                  height: auto;
+                  transition: 0.3s ease-in-out;
+                  &:hover {
+                    transform: translateY(-0.5rem);
+                    transition: 0.3s ease-in-out;
+                  }
+                }
+              }
+              .coll-right {
+                p {
+                  margin: 0;
+                  padding: 0;
+                  font-size: 16px;
+                  line-height: 24.5px;
+                  font-style: normal;
+                  font-weight: normal;
+                  color: $c1-50;
+                }
+              }
+            }
+            .text2-text2 {
+              max-width: 750px;
+              margin: 0 auto;
+              padding: 20px 0 0;
+              color: $c1-50;
+              font-size: 16px;
+              line-height: 24.5px;
+            }
+          }
+        }
+      }
+    }
+  }
+  .blog-single2 {
+    .text {
+      .container {
+        .text-styles-top-33 {
+          .blockquote {
+            max-width: 750px;
+            margin: 0 auto;
+            border-left: 3px solid $c1-50;
+            padding-left: 45px;
+            background: $light-bg;
+            padding-top: 25px;
+            padding-bottom: 25px;
+            padding-right: 25px;
+            q {
+              color: $c1-200;
+              font-size: 24px;
+              line-height: 36px;
+            }
+            .blockquote-footer {
+              margin-top: 20px;
+              display: block;
+              font-size: 80%;
+              color: #6c757d;
+            }
+          }
+        }
+      }
+    }
+  }
+}
