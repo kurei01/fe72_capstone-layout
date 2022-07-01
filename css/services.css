@@ -417,8 +417,52 @@ a {
   text-align: center;
   display: inline-block;
   margin-left: 5px;
+  transition: all 0.5s;
+}
+.footer .footer-bottom .container .below-section .col .social a:hover {
+  color: #dc4f72;
 }
 
+@media screen and (max-width: 768px) {
+  .footer-bottom .container .row .col-lg-6 .other-links {
+    margin-left: 3rem;
+  }
+  .footer-bottom .container .row .news {
+    padding: 0 !important;
+  }
+  .footer-bottom .container .row .news .item {
+    margin-left: 1rem;
+    padding: 3em;
+  }
+  .footer-bottom .container .row .news .item .get_update-box {
+    padding: 2em !important;
+  }
+  .footer-bottom .container .below-section {
+    flex-direction: column;
+    justify-content: center !important;
+    align-items: center;
+  }
+}
+@media screen and (max-width: 576px) {
+  .footer-bottom .container .row .col-lg-6 .other-links {
+    margin-left: 3rem;
+  }
+  .footer-bottom .container .row .news {
+    padding: 0 !important;
+  }
+  .footer-bottom .container .row .news .item {
+    margin-left: 1.5rem;
+    padding: 3em;
+  }
+  .footer-bottom .container .row .news .item .get_update-box {
+    padding: 2em !important;
+  }
+  .footer-bottom .container .below-section {
+    flex-direction: column;
+    justify-content: center !important;
+    align-items: center;
+  }
+}
 ul {
   list-style-type: none;
   text-align: left;
@@ -658,4 +702,35 @@ ul {
   color: #fff;
   background-color: #d62f58;
   border-color: #cf2952;
+}
+
+@media screen and (max-width: 768px) {
+  .services2 .mobile-info .container .row .mobile-right .mobile-right-grids {
+    padding: 0 1rem;
+  }
+  .services2 .mobile-info .container .row .mobile-right .mobile-right-grids .mobile-right-icon {
+    text-align: right;
+  }
+  .services2 .mobile-info .container .row .mobile-left {
+    padding-left: 232px !important;
+  }
+  .services2 .mobile-info .container .row .mobile-left img {
+    width: 300px !important;
+    margin: 20px auto 40px !important;
+  }
+}
+@media screen and (max-width: 576px) {
+  .services2 .mobile-info .container .row .mobile-right .mobile-right-grids {
+    padding: 0 1rem;
+  }
+  .services2 .mobile-info .container .row .mobile-right .mobile-right-grids .mobile-right-icon {
+    text-align: right;
+  }
+  .services2 .mobile-info .container .row .mobile-left {
+    padding-left: 140px !important;
+  }
+  .services2 .mobile-info .container .row .mobile-left img {
+    width: 300px !important;
+    margin: 20px auto 40px !important;
+  }
 }/*# sourceMappingURL=services.css.map */

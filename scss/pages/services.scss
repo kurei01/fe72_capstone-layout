@@ -290,3 +290,55 @@ ul {
     }
   }
 }
+
+@media screen and (max-width: 768px) {
+  .services2 {
+    .mobile-info {
+      .container {
+        .row {
+          .mobile-right {
+            .mobile-right-grids {
+              padding: 0 1rem;
+              .mobile-right-icon {
+                text-align: right;
+              }
+            }
+          }
+          .mobile-left {
+            padding-left: 232px !important;
+            img {
+              width: 300px !important;
+              margin: 20px auto 40px !important;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .services2 {
+    .mobile-info {
+      .container {
+        .row {
+          .mobile-right {
+            .mobile-right-grids {
+              padding: 0 1rem;
+              .mobile-right-icon {
+                text-align: right;
+              }
+            }
+          }
+          .mobile-left {
+            padding-left: 140px !important;
+            img {
+              width: 300px !important;
+              margin: 20px auto 40px !important;
+            }
+          }
+        }
+      }
+    }
+  }
+}

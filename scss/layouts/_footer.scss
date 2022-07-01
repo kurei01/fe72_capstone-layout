@@ -172,9 +172,71 @@
               text-align: center;
               display: inline-block;
               margin-left: 5px;
+              transition: all 0.5s;
+              &:hover {
+                color: $primary;
+              }
             }
           }
         }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .footer-bottom {
+    .container {
+      .row {
+        .col-lg-6 {
+          .other-links {
+            margin-left: 3rem;
+          }
+        }
+        .news {
+          padding: 0 !important;
+          .item {
+            margin-left: 1rem;
+            padding: 3em;
+            .get_update-box {
+              padding: 2em !important;
+            }
+          }
+        }
+      }
+      .below-section {
+        flex-direction: column;
+        justify-content: center !important;
+        align-items: center;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .footer-bottom {
+    .container {
+      .row {
+        .col-lg-6 {
+          .other-links {
+            margin-left: 3rem;
+          }
+        }
+        .news {
+          padding: 0 !important;
+          .item {
+            margin-left: 1.5rem;
+            padding: 3em;
+            .get_update-box {
+              padding: 2em !important;
+            }
+          }
+        }
+      }
+      .below-section {
+        flex-direction: column;
+        justify-content: center !important;
+        align-items: center;
       }
     }
   }

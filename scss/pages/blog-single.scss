@@ -516,3 +516,18 @@
     }
   }
 }
+@media screen and (max-width: 768px) {
+  .blog-single {
+    .container {
+      max-width: 85%;
+    }
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .blog-single {
+    .container {
+      max-width: 90%;
+    }
+  }
+}
