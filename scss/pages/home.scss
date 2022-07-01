@@ -397,8 +397,6 @@
 .faq {
   background-color: $light-bg;
   .container {
-    .header-section {
-    }
     .row {
       .col-img {
         .faq-image {
@@ -524,7 +522,7 @@
         transition: opacity 0.2s ease;
         border-radius: 0;
         position: relative;
-        &:hover{
+        &:hover {
           background-color: $primary;
         }
       }

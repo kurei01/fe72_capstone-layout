@@ -71,9 +71,9 @@
     .container {
       padding: 3rem 0;
       .row {
-        .col {
+        .col-lg-6 {
           .other-links {
-            .col {
+            .col-md-4 {
               .item {
                 h2 {
                   @include Text($text-md, $text-bold, $c1-200);
