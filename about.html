@@ -18,7 +18,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;500;600;700;800&display=swap"
     rel="stylesheet" />
   <!--magnific popup-->
-  <link rel="stylesheet" href="cdn.jsdelivr.net/jquery.magnific-popup/1.0.0/magnific-popup.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.min.css" />
   <!--owl carousel-->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
     integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
@@ -241,23 +241,22 @@
       <main class="main mx-auto mt-5">
         <div class="position-relative">
           <img src="./img/b9.jpg" alt="vid" />
+
           <a href="#small-dialog" class="position-absolute text-center playview popup-with-zoom-anim">
             <span class="video-play-icon">
               <i class="fa fa-play"></i>
             </span>
           </a>
-          <div id="small-dialog" class="zoom-anim-dialog mfp-hide">
+
+          <div id="small-dialog" class="zoom-anim-dialog mfp-hide dialog-display">
             <iframe src="https://www.youtube.com/embed/a5KYlHNKQB8" allowfullscreen></iframe>
           </div>
         </div>
       </main>
 
-      <div class="mt-5 resquest-quote text-center">
-        <button type="button" class="btn" data-toggle="modal" data-target="#exampleModalCenter">
-          Request a quote
-        </button>
-      </div>
+
     </div>
+  </div>
   </div>
 
   <section class="customer pb-5">
@@ -573,6 +572,11 @@
         </div>
       </div>
     </div>
+
+    <!-- move top -->
+    <button onclick="topFunction()" id="movetop" title="Go to top">
+      <span class="fa fa-angle-up"></span>
+    </button>
   </footer>
 
   <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
@@ -621,7 +625,7 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
     integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
     crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-  <!-- script for customers with magnific-->
+  <!-- script for customers-->
   <script>
     $(document).ready(function () {
       $(".owl-three").owlCarousel({
@@ -654,6 +658,8 @@
       });
     });
   </script>
+  <!--magnific-->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script>
 
   <script src="./js/index.js"></script>
 </body>

@@ -18,7 +18,9 @@ body {
   max-width: 1200px;
 }
 
-a, li, ol {
+a,
+li,
+ol {
   list-style: none;
   text-decoration: none;
 }
@@ -69,6 +71,29 @@ a, li, ol {
 
 .breadcrumb a:hover {
   text-decoration: underline;
+}
+
+#movetop {
+  position: fixed;
+  bottom: 75px;
+  right: 0px;
+  z-index: 99;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  width: 50px;
+  height: 45px;
+  background: #dc4f72;
+  padding: 0;
+  opacity: 0.7;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+}
+
+#movetop span {
+  line-height: 45px;
+  color: #fff;
+  font-size: 22px;
 }
 
 .header {
@@ -729,19 +754,6 @@ a, li, ol {
           transform: scale(1.1, 1.1);
 }
 
-.creative .main .mfp-hide {
-  display: none;
-  max-width: 750px;
-  margin: 40px auto;
-  position: relative;
-}
-
-.creative .main .mfp-hide iframe {
-  width: 100%;
-  height: 400px;
-  display: block;
-}
-
 .creative .resquest-quote button {
   background: #dc4f72;
   border: 1px solid #dc4f72;
@@ -890,4 +902,25 @@ a, li, ol {
     -webkit-box-shadow: 0 0 0 10px rgba(255, 255, 255, 0.15), 0 0 0 20px rgba(255, 255, 255, 0.15), 0 0 0 40px rgba(50, 100, 245, 0);
             box-shadow: 0 0 0 10px rgba(255, 255, 255, 0.15), 0 0 0 20px rgba(255, 255, 255, 0.15), 0 0 0 40px rgba(50, 100, 245, 0);
   }
+}
+
+.mfp-auto-cursor .mfp-content {
+  text-align: center;
+  width: 750px;
+  position: relative;
+}
+
+.mfp-close-btn-in .mfp-close {
+  color: #fff;
+  position: absolute;
+  line-height: 40px;
+  right: 0;
+  top: -40px;
+  font-size: 28px;
+}
+
+iframe {
+  width: 750px;
+  height: 400px;
+  display: block;
 }
