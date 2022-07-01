@@ -163,7 +163,7 @@
         img {
           transition: 0.3s ease-in-out;
           border-radius: 6px;
-          box-shadow: 0 0.5rem 1rem rgb(0 0 0 / 15%);
+          box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
         }
       }
     }
@@ -500,6 +500,96 @@
                   z-index: 2;
                   transition: all 0.25s ease-in-out;
                 }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.testimonials {
+  .owl-theme .owl-nav.disabled + .owl-dots {
+    margin-top: 30px;
+    button {
+      background-color: transparent;
+      span {
+        width: 40px;
+        height: 5px;
+        margin: 5px 5px;
+        background: #fff;
+        display: block;
+        border: none;
+        transition: opacity 0.2s ease;
+        border-radius: 0;
+        position: relative;
+        &:hover{
+          background-color: $primary;
+        }
+      }
+    }
+  }
+
+  .owl-theme .owl-dots .owl-dot.active span {
+    background-color: $primary !important;
+  }
+  .testimonials-block {
+    background-size: cover;
+    background-image: linear-gradient(
+        to right,
+        rgba(247, 249, 252, 0.77),
+        rgba(247, 249, 252, 0.77)
+      ),
+      url(../../img/b2.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    .row {
+      .item {
+        .slider-info {
+          max-width: 95%;
+          margin: 0 auto;
+          padding: 2rem;
+          display: grid;
+          grid-template-columns: auto 1fr;
+          grid-gap: 50px;
+          background-color: #fff;
+          border-radius: 6px;
+          .img-circle {
+            width: 100px;
+            height: 100px;
+            display: inline-block;
+            overflow: hidden;
+            background: $light-bg;
+            border-radius: 50%;
+            border: 3px solid $primary;
+          }
+          .message {
+            position: relative;
+            span {
+              font-size: 30px;
+              color: $c1-200;
+              opacity: 0.2;
+              position: absolute;
+              top: 0px;
+              left: -40px;
+              right: 0;
+            }
+            p {
+              font-size: 18px;
+              line-height: 26px;
+              color: $c1-200;
+            }
+            .name {
+              h4 {
+                font-size: 18px;
+                color: $primary;
+                font-weight: 400;
+              }
+              p {
+                font-size: 13px;
+                color: $c1-200;
               }
             }
           }
