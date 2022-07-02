@@ -3,9 +3,8 @@
 *.sass.map
 *.scss.map
 
-scss/common/
-scss/layouts/
-scss/theme/
-css/
-img/
-js/
+.img/
+.js/
+.scss/common/
+.scss/layouts
+.scss/theme
