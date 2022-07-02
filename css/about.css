@@ -892,32 +892,28 @@ ol {
           transform: scale(1.1, 1.1);
 }
 
-.creative .resquest-quote button {
-  background: #dc4f72;
-  border: 1px solid #dc4f72;
-  border-radius: 0.25rem;
-  padding: 0px 30px;
-  -webkit-box-shadow: none;
-          box-shadow: none;
-  display: block;
-  -webkit-transition: all 0.4s;
-  transition: all 0.4s;
-  cursor: pointer;
-  display: inline-block;
+.creative .resquet-quote button {
+  -webkit-transition: 0.3s ease-out;
+  transition: 0.3s ease-out;
   line-height: 52px;
-  font-size: 0.875rem;
   font-weight: 700;
-  color: #fff;
+  font-size: 14px;
+  margin: 0px;
+  padding: 0px 30px;
   text-transform: uppercase;
-  -webkit-transition: all 0.3s;
-  transition: all 0.3s;
+  background-color: #dc4f72;
+  border-color: #dc4f72;
+  color: #fff;
 }
 
-.creative .resquest-quote button:hover {
-  -webkit-transition: all 0.3s;
-  transition: all 0.3s;
+.creative .resquet-quote button:hover {
   background-color: #d62f58;
   border-color: #cf2952;
+}
+
+.creative .resquet-quote button:focus {
+  -webkit-box-shadow: 0 0 0 0.2rem rgba(225, 105, 135, 0.5);
+          box-shadow: 0 0 0 0.2rem rgba(225, 105, 135, 0.5);
 }
 
 .customer .item img {

@@ -166,18 +166,24 @@
     }
   }
 
-  .resquest-quote {
+  .resquet-quote {
     button {
-      @include Button($primary, 1px solid $primary, 0.25rem, 0px 30px, none);
-      display: inline-block;
+      transition: 0.3s ease-out;
       line-height: 52px;
-      @include Text($text-sm, $text-bold, $white);
+      font-weight: 700;
+      font-size: 14px;
+      margin: 0px;
+      padding: 0px 30px;
       text-transform: uppercase;
-      transition: all 0.3s;
+      background-color: $primary;
+      border-color: $primary;
+      color: #fff;
       &:hover {
-        transition: all 0.3s;
         background-color: $c2-400;
         border-color: $c2-300;
+      }
+      &:focus {
+        box-shadow: 0 0 0 0.2rem rgba(225, 105, 135, 0.5);
       }
     }
   }
