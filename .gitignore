@@ -2,3 +2,10 @@
 *.css.map
 *.sass.map
 *.scss.map
+
+scss/common/
+scss/layouts/
+scss/theme/
+css/
+img/
+js/
