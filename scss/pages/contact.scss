@@ -1,0 +1,114 @@
+@import "../theme/mixin";
+@import "../theme/variables";
+@import "../common/base";
+@import "../layouts/header";
+@import "../layouts/footer";
+
+.contact-top {
+  .main {
+    img {
+      max-width: 100%;
+      border-radius: 6px;
+      transition: 0.3s ease-in-out;
+      &:hover {
+        transform: translateY(-0.5rem);
+      }
+    }
+
+    .contact-form {
+      background-color: $white;
+      padding: 2rem;
+      border-radius: 6px;
+      box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.09);
+      position: relative;
+      left: -75px;
+      .contact-input {
+        outline: none;
+        padding: 15px 20px;
+        border-radius: 6px;
+        @include Text($text-base, $text-semiBold, #000);
+        width: 100%;
+        line-height: 1.625rem;
+        margin-bottom: 15px;
+        border: 1px solid #eee;
+        background-color: $light-bg;
+        &:focus {
+          border-color: $primary;
+          background-color: $white;
+        }
+      }
+      textarea {
+        height: 130px;
+        resize: none;
+      }
+      button {
+        padding: 0 50px;
+        transition: 0.3s ease-out;
+        line-height: 52px;
+        font-weight: $text-bold;
+        font-size: $text-sm;
+        text-transform: uppercase;
+        background-color: $primary;
+        border-color: $primary;
+        &:hover {
+          background-color: $c2-400;
+          border-color: $c2-300;
+        }
+      }
+    }
+  }
+}
+
+.contact-mid {
+  background-color: $light-bg;
+  .main {
+    .row {
+      grid-template-columns: 1fr 1fr 1fr;
+      .item {
+        box-shadow: 1px 5px 7px rgba(196, 196, 196, 0.2);
+        padding: 2rem;
+        background-color: $white;
+        border-radius: 6px;
+        display: grid;
+        grid-template-rows: auto 1fr;
+        gap: 20px;
+        transition: 0.3s ease-in-out;
+        text-align: center;
+        &:hover {
+          box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.09);
+          transform: translateY(-0.5rem);
+        }
+        .icon {
+          width: 60px;
+          margin: 0 auto;
+          height: 60px;
+          border-radius: 50%;
+          line-height: 60px;
+          background: rgba(220, 79, 114, 0.1);
+          i{
+            font-size: 20px;
+            color: $primary;
+            line-height: 60px;
+          }
+        }
+        .detail{
+            h4{
+                @include Text($text-lg, $text-bold, $c1-200);
+                margin-bottom: .625rem;
+            }
+            p, a{
+                @include Text($text-md, $text-semiBold, $c1-50);
+                line-height: 1.75rem;
+                a{
+                    transition: .3s ease-in;
+                    &:hover{
+                        text-decoration: underline;
+                        color: $primary;
+                    }
+                }
+            }
+        }
+      }
+    }
+  }
+}

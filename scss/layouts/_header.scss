@@ -61,7 +61,7 @@
             transition: all 0.5s;
           }
         }
-        .active {
+        .active{
           color: $primary;
         }
 
@@ -186,4 +186,5 @@
 
 .onScroll {
   padding: 0;
+  z-index: 1030;
 }

@@ -86,7 +86,7 @@
                   @include Text($text-base, $text-regular, $c1-75);
                   line-height: 25px;
                   margin: 0.675rem 0;
-                  &:hover {
+                  &:hover{
                     color: $primary;
                   }
                 }
@@ -161,7 +161,7 @@
               display: inline-block;
               color: $c1-200;
               line-height: 22px;
-              &:hover {
+              &:hover{
                 color: $primary;
               }
             }
