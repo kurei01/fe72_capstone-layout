@@ -22,36 +22,53 @@
 
 <body>
   <!-- header -->
-  <header class="header">
+  <header id="site-header" class="header">
     <div class="container">
-      <div class="logo-header">
-        <a href="/index.html" class="logo">
-          <i class="fa-regular fa-handshake"></i>
-          <p>Masterwork</p>
+      <nav class="navbar navbar-expand-lg stroke p-0">
+        <a class="navbar-brand" href="#">
+          <i class="fa-regular fa-handshake"></i> Masterwork
         </a>
-      </div>
-      <div class="wrap-navbar">
-        <nav class="navbar">
-          <a href="./index.html" class="nav-item">Home</a>
-          <a href="./about.html" class="nav-item">About</a>
-          <a href="./services.html" class="nav-item active">Services</a>
-          <div class="drop_down-menu" onclick="dropDownMenu()">
-            <!-- sau đó gắn onClick cho cái thẻ a này  -->
-            <a class="drop_down-btn" role="button">Pages <i class="fa-solid fa-angle-down"></i></a>
-            <div class="menu_item" id="drop-down-content">
-              <a href="./blog-post.html" class="item">Blog post</a>
-              <a href="./blog-single.html" class="item">Blog single</a>
-              <a href="#" class="item">Landing page</a>
-            </div>
-          </div>
-          <a href="./contact.html" class="nav-item">Contact</a>
-        </nav>
 
-        <div class="btn-schedule">
-          <a href="#" class="btn">SCHEDULE A DEMO</a>
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon fa icon-expand fa-bars"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="services.html" style="color: #dc4f72;">Service</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                Pages
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="blog-post.html">Blog posts</a>
+                <a class="dropdown-item" href="blog-single.html">Blog single</a>
+                <a class="dropdown-item" href="#">Landing page</a>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">contact</a>
+            </li>
+            <li class="nav-item me-lg-3 me-0 mt-lg-0 mt-3">
+              <a class="btn btn-outline-primary theme-button" href="#">Schedule a Demo</a>
+            </li>
+          </ul>
         </div>
-      </div>
+
+      </nav>
     </div>
+
   </header>
   <nav class="breadcrumb" id="breadcrumbs">
     <div class="container page-wrapper">
