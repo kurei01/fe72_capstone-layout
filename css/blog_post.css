@@ -55,6 +55,21 @@ ol {
   line-height: 1.4rem;
 }
 
+@media screen and (max-width: 768px) {
+  .title {
+    max-width: 400px;
+    margin: 0 auto;
+  }
+  .title h2 {
+    font-size: 40px;
+    line-height: 50px;
+  }
+  .title h3 {
+    font-size: 32px;
+    line-height: 42px;
+  }
+}
+
 .breadcrumb {
   padding: 15px 20px;
   background-color: #f7f9fc;
@@ -783,6 +798,18 @@ ol {
   right: -16px;
 }
 
+@media screen and (max-width: 768px) {
+  .blog .item {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
 .blog .item a {
   border-radius: 6px 0 0 6px;
   overflow: hidden;
@@ -830,6 +857,12 @@ ol {
   top: 8px;
   -webkit-transition: 0.3s ease-in-out;
   transition: 0.3s ease-in-out;
+}
+
+@media screen and (max-width: 768px) {
+  .blog .owl-carousel .owl-nav.disabled {
+    display: none;
+  }
 }
 
 .news .item {

@@ -55,6 +55,21 @@ ol {
   line-height: 1.4rem;
 }
 
+@media screen and (max-width: 768px) {
+  .title {
+    max-width: 400px;
+    margin: 0 auto;
+  }
+  .title h2 {
+    font-size: 40px;
+    line-height: 50px;
+  }
+  .title h3 {
+    font-size: 32px;
+    line-height: 42px;
+  }
+}
+
 .breadcrumb {
   padding: 15px 20px;
   background-color: #f7f9fc;
