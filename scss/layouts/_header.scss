@@ -12,6 +12,7 @@
   height: 90px;
   display: grid;
   align-items: center;
+  z-index: 1040;
   .navbar-brand {
     padding: 0;
     margin: 0;
@@ -31,14 +32,15 @@
       border-color: $primary;
     }
   }
-  @media only screen and (max-width: 991px){
-    .navbar{
+  @media only screen and (max-width: 991px) {
+    .navbar {
       background-color: #fff;
-    .navbar-toggler{
-      &:focus{
-        box-shadow: none;
+
+      .navbar-toggler {
+        &:focus {
+          box-shadow: none;
+        }
       }
-    }
     }
   }
   .navbar-nav {
@@ -141,4 +143,7 @@
 .onScroll {
   height: 70px;
   z-index: 1030;
+  @media only screen and (max-width: 991px){
+    height: 90px;
+  }
 }
